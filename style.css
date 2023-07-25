@@ -1,0 +1,159 @@
+/* This universal selector is specifying the border, padding, and margin of all the html elements */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* This element selector controls the anchor tags for links anchored using <a>. The link text will be white and there are no lines around the text. */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* This element selector controls the text tagged using the paragraph tag <p>. The text size for all <p> elements should have a font-size of 16px */
+p {
+    font-size: 16px;
+}
+
+/* This element selector controls the entire body element of the page, which is the entirety of what loads on the browser's webpage. The backround of the body element is off-white */
+body {
+    background-color: #d9dcd6;
+}
+
+/* This element selector controls what is nested in the <header> tag. It is telling the header container to have 20px of padding, a blue background, white text, and what font-family to use. */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/* This element selector controls the h1 inside the header element, which in this case is the company's logo. 
+the font-size of h1 is 48px and the display of inline-block generates a container that is flowed with surrounding content, as if it was one inline container.*/
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* This class selector controls the class "seo", which corresponds to the "seo" inside the name "Horiseons" 
+This is making the color of "seo" off-white */
+.seo { 
+    color: #d9dcd6;
+} 
+
+/* This class selector is controling the navigation bar list which has links. The below code is making anything the navigation bar container.
+The container padding is 15px, the right margin is 20px, has a font-size of 20px, has a font-family, and float:right makes the elements
+float on the right side of the container.   */
+.link_list { 
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+/* This is two element selectors nested inside an element with a class selector. It controls the layout of each list item in the unordered list.
+This is making the list items have no bullet points of placeholders. There is a 25px left margin and each line item has a display of inline-block, which 
+allows each li to be next to each other */
+.link_list ul li {  
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* This class selector is controling the large background image on the page. The code below specifies the height, width,
+bottom margin, image size, position, and gives the image path. */
+.bkg_image {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* This element selector controls the <main> container of the html. This is specifying width, left margin and display type. */
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* This class selector controls the section containers in the main element of the page. It is setting the bottom margin,
+padding, height, font-family, background color, and text color for each of these three containers. */
+.main_containers {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* This nested element selector is controling the <h2> tag in each "main_container" class. It is setting the font size and bottom margin. */
+.main_containers h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* This class selector is controling the "float-left" class. This class contains images that we want on the left of the text.
+This is done using "float:left". It also sets margins. */
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+}
+
+/* This class selector is controling the "float-right" class. This class contains images that we want on the right of the text.
+This is done using "float:right". It also sets margins. */
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
+}
+
+/* This element selector controls the "aside" element. It sets ups the container that everything in the "aside" element will fit in. */
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* This class selector controls the container for each of the three aside elements. The text is white and has a bottom margin of 32px */
+.benefits {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* This element selector nested in the class selector controls the h3 for all three aside elements. It centers the text and sets the bottom margin to 10px. */
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* This element selector nested in the class selector controls the image container for all three aside elements.*/
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* This element seector controls the entire footer of the page. It is setting the padding, font-family, text alignment. Clear:none is indicating
+that this element is not moved down to clear past floating elements*/
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* This nested element selector controls the font size for h2 */
+footer h2 {
+    font-size: 20px;
+}
